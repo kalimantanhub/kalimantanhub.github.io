@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KalimantanHub — Tools Digital Kalimantan</title>
+
+  <meta name="description" content="Portal digital untuk masyarakat Kalimantan dengan berbagai tools gratis untuk kreator, UMKM, dan masyarakat.">
+
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <span class="logo-icon">K</span>
+        <span>Kalimantan<span class="logo-highlight">Hub</span></span>
+      </a>
+
+      <nav>
+        <a href="#tools">Tools</a>
+        <a href="#banjar">Bahasa Banjar</a>
+        <a href="#about">Tentang</a>
+      </nav>
+
+      <button id="themeBtn" class="theme-btn" aria-label="Ganti tema">
+        🌙
+      </button>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero">
+      <div class="container hero-content">
+
+        <div class="badge">
+          🚀 Platform Digital Kalimantan
+        </div>
+
+        <h1>
+          Tools Digital untuk
+          <span>Kalimantan.</span>
+        </h1>
+
+        <p>
+          Kumpulan tools gratis untuk kreator, UMKM,
+          pelajar, pekerja, dan masyarakat Kalimantan.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#tools" class="btn primary">
+            Jelajahi Tools →
+          </a>
+
+          <a href="#banjar" class="btn secondary">
+            Kamus Banjar
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SEARCH -->
+    <section class="search-section">
+      <div class="container">
+
+        <div class="search-box">
+          <span>🔎</span>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Cari tools..."
+          >
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TOOLS -->
+    <section id="tools" class="section">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">TOOLS GRATIS</span>
+          <h2>Tools yang bisa kamu gunakan</h2>
+          <p>
+            Praktis, gratis, dan langsung berjalan di browser.
+          </p>
+        </div>
+
+
+        <div class="tools-grid" id="toolsGrid">
+
+          <!-- Caption -->
+          <article class="tool-card" data-name="generator caption caption sosial media">
+            <div class="tool-icon">✍️</div>
+            <h3>Generator Caption</h3>
+            <p>
+              Buat ide caption untuk Instagram, TikTok,
+              Facebook, dan media sosial lainnya.
+            </p>
+            <button onclick="generateCaption()" class="tool-btn">
+              Gunakan →
+            </button>
+          </article>
+
+
+          <!-- Ide Konten -->
+          <article class="tool-card" data-name="generator ide konten content creator">
+            <div class="tool-icon">💡</div>
+            <h3>Ide Konten</h3>
+            <p>
+              Temukan ide konten sederhana untuk
+              meningkatkan kreativitasmu.
+            </p>
+            <button onclick="generateIdea()" class="tool-btn">
+              Cari Ide →
+            </button>
+          </article>
+
+
+          <!-- HPP -->
+          <article class="tool-card" data-name="kalkulator hpp usaha umkm">
+            <div class="tool-icon">🧮</div>
+            <h3>Kalkulator HPP</h3>
+            <p>
+              Hitung harga pokok produksi dengan
+              mudah untuk usaha dan UMKM.
+            </p>
+            <button onclick="calculateHPP()" class="tool-btn">
+              Hitung →
+            </button>
+          </article>
+
+
+          <!-- Profit -->
+          <article class="tool-card" data-name="kalkulator profit keuntungan usaha">
+            <div class="tool-icon">📈</div>
+            <h3>Kalkulator Profit</h3>
+            <p>
+              Hitung keuntungan usaha berdasarkan
+              harga modal dan harga jual.
+            </p>
+            <button onclick="calculateProfit()" class="tool-btn">
+              Hitung →
+            </button>
+          </article>
+
+
+          <!-- Password -->
+          <article class="tool-card" data-name="password generator keamanan">
+            <div class="tool-icon">🔐</div>
+            <h3>Password Generator</h3>
+            <p>
+              Buat password acak yang lebih kuat
+              untuk akun digitalmu.
+            </p>
+            <button onclick="generatePassword()" class="tool-btn">
+              Buat Password →
+            </button>
+          </article>
+
+
+          <!-- QR -->
+          <article class="tool-card" data-name="qr code generator kode qr">
+            <div class="tool-icon">📱</div>
+            <h3>QR Code Generator</h3>
+            <p>
+              Buat QR Code dari teks atau link
+              dengan cepat.
+            </p>
+            <button onclick="generateQR()" class="tool-btn">
+              Buat QR →
+            </button>
+          </article>
+
+
+          <!-- Text Counter -->
+          <article class="tool-card" data-name="text counter penghitung kata">
+            <div class="tool-icon">🔤</div>
+            <h3>Text Counter</h3>
+            <p>
+              Hitung jumlah kata dan karakter
+              dalam sebuah teks.
+            </p>
+            <button onclick="textCounter()" class="tool-btn">
+              Hitung →
+            </button>
+          </article>
+
+
+          <!-- Case -->
+          <article class="tool-card" data-name="case converter huruf teks">
+            <div class="tool-icon">🔠</div>
+            <h3>Case Converter</h3>
+            <p>
+              Ubah teks menjadi huruf besar,
+              kecil, atau format lainnya.
+            </p>
+            <button onclick="caseConverter()" class="tool-btn">
+              Gunakan →
+            </button>
+          </article>
+
+
+          <!-- Password Checker -->
+          <article class="tool-card" data-name="password checker cek password">
+            <div class="tool-icon">🛡️</div>
+            <h3>Password Checker</h3>
+            <p>
+              Periksa kekuatan password yang
+              kamu gunakan.
+            </p>
+            <button onclick="checkPassword()" class="tool-btn">
+              Periksa →
+            </button>
+          </article>
+
+
+          <!-- Calculator -->
+          <article class="tool-card" data-name="calculator kalkulator hitung">
+            <div class="tool-icon">➗</div>
+            <h3>Calculator</h3>
+            <p>
+              Kalkulator sederhana untuk
+              perhitungan sehari-hari.
+            </p>
+            <button onclick="openCalculator()" class="tool-btn">
+              Buka →
+            </button>
+          </article>
+
+        </div>
+
+        <div id="noResults" class="no-results" hidden>
+          Tools tidak ditemukan.
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- BANJAR -->
+    <section id="banjar" class="section banjar-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-label">BAHASA BANJAR</span>
+          <h2>Kamus Bahasa Banjar</h2>
+          <p>
+            Beberapa kosakata Bahasa Banjar yang umum digunakan.
+          </p>
+        </div>
+
+
+        <div class="dictionary">
+
+          <div class="dictionary-item">
+            <strong>Kada</strong>
+            <span>Tidak</span>
+          </div>
+
+          <div class="dictionary-item">
+            <strong>Handak</strong>
+            <span>Ingin / Mau</span>
+          </div>
+
+          <div class="dictionary-item">
+            <strong>Pian</strong>
+            <span>Kamu / Anda</span>
+          </div>
+
+          <div class="dictionary-item">
+            <strong>Ulun</strong>
+            <span>Saya</span>
+          </div>
+
+          <div class="dictionary-item">
+            <strong>Ikam</strong>
+            <span>Kamu</span>
+          </div>
+
+          <div class="dictionary-item">
+            <strong>Hanyar</strong>
+            <span>Baru</span>
+          </div>
+
+          <div class="dictionary-item">
+            <strong>Bahari</strong>
+            <span>Dulu / Dahulu</span>
+          </div>
+
+          <div class="dictionary-item">
+            <strong>Gasan</strong>
+            <span>Untuk</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="container about">
+
+        <div>
+          <span class="section-label">TENTANG</span>
+          <h2>Apa itu KalimantanHub?</h2>
+        </div>
+
+        <div>
+          <p>
+            KalimantanHub adalah proyek digital yang dibuat
+            untuk menyediakan berbagai tools dan sumber daya
+            sederhana yang bermanfaat bagi masyarakat
+            Kalimantan.
+          </p>
+
+          <p>
+            Platform ini ditujukan untuk kreator,
+            UMKM, pelajar, pekerja, dan siapa saja
+            yang membutuhkan tools digital gratis.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+
+      <div>
+        <strong>KalimantanHub</strong>
+        <p>
+          Tools digital untuk Kalimantan.
+        </p>
+      </div>
+
+      <div>
+        <a href="https://github.com/kalimantanhub" target="_blank">
+          GitHub
+        </a>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 KalimantanHub. Dibuat untuk Kalimantan.
+    </div>
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
